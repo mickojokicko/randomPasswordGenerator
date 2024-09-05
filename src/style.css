@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #282848;
+  color: #282848;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.generator {
+  width: 100%;
+  max-width: 640px;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: #1ac217;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+input:not([type='checkbox']),
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.password-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.password-wrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 10px;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3fd619 25%, #036ff3 75%);
+}
+
+.password-wrap input {
+  flex: 1 1 0%;
+  padding: 0.5rem;
+  color: #051101;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.password-wrap input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.password-wrap button {
+  cursor: pointer;
+  background: linear-gradient(to right, #a770c7 25%, #2270ce 75%);
+  background-clip: text;
+  -webkit-text-fill-color: teal;
+  color: #2270ce;
+}
+
+.password-wrap button:hover {
+  background-clip: text;
+  transform: scale(1.2);
+}
+
+label {
+  display: flex;
+  user-select: none;
+  margin-bottom: 1.4rem;
+}
+
+label span {
+  display: block;
+  flex: 1 1 0%;
+  white-space: nowrap;
+}
+
+label input [type='number'] {
+  text-align: right;
+}
+
+button[type='submit'] {
+  cursor: pointer;
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #3fd619 5%, #036ff3 25%);
+  background-size: 200%;
+  background-position: 25%;
+  transition: 0.5s ease-out;
+}
+
+#generateAnother {
+  display: flex;
+  margin-top: 20px;
+  width: 185px;
+  color: rgb(252, 252, 252);
+}
+button:hover {
+  background: linear-gradient(to left, #3fd619 5%, #036ff3 25%);
+  transform: scale(1.1);
+}
+
+#length {
+  font-style: italic;
+  text-align: right;
+  font-weight: bolder;
+  color: rgb(148, 19, 228);
+  /* margin-right: -15px; */
+}
